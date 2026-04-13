@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <div> 
+        <h1>MINHA PÁGINA</h1>
+        <p id="texto">Texto Principal</p>
+        <button onclick="mudarTexto()">Clique Aqui!</button>
+    
+        <script>
+            function mudarTexto() {
+                document.getElementById("texto").innerText = "Texto Alterado!!";
+            }
+        </script>
+    </div>
+   
+
+    <div onmouseover="this.style.backgroundColor='purple'" onmouseout="this.style.backgroundColor='white'"
+        style="background-color: white; padding: 20px; border: 1px solid black;">
+        Passe o mouse aqui
+    </div>
+
+
+</body>
+
+</html>
